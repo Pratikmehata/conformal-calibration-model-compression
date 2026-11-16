@@ -1,0 +1,86 @@
+100%|██████████| 206M/206M [04:00<00:00, 856kB/s] 
+[pathmnist] train 89996 | calib+eval pool 7180 | classes 9 | class counts (pool) [1338, 847, 339, 634, 1035, 592, 741, 421, 1233]
+  seed 0 (889s) acc: fp32=0.889 int8=0.888 int4=0.897 prune50=0.910 prune70=0.873 prune50+ft=0.912 prune70+ft=0.909
+  seed 1 (932s) acc: fp32=0.891 int8=0.892 int4=0.705 prune50=0.869 prune70=0.800 prune50+ft=0.902 prune70+ft=0.894
+  seed 2 (931s) acc: fp32=0.902 int8=0.905 int4=0.660 prune50=0.881 prune70=0.759 prune50+ft=0.898 prune70+ft=0.903
+
+===== pathmnist (reuse vs recal; +/- = 95% t-interval across 3 seeds) =====
+score       comp   acc          gap_pts    size_ratio  wcc_reuse  wcc_recal seeds_same_sign
+  APS       fp32 0.894   +0.24 +/- 0.67 1.00 +/- 0.00      0.675      0.675             3/3
+  APS       int8 0.895   +0.15 +/- 1.19 1.00 +/- 0.03      0.680      0.680             2/3
+  APS       int4 0.754   -2.29 +/- 6.24 0.90 +/- 0.26      0.559      0.635             2/3
+  APS    prune50 0.887   +4.15 +/- 1.99 1.23 +/- 0.10      0.820      0.736             3/3
+  APS prune50+ft 0.904   -3.87 +/- 6.74 0.82 +/- 0.25      0.558      0.603             3/3
+  APS    prune70 0.811   +8.50 +/- 0.61 1.44 +/- 0.31      0.935      0.692             3/3
+  APS prune70+ft 0.902   -4.58 +/- 1.97 0.76 +/- 0.05      0.613      0.731             3/3
+  LAC       fp32 0.894   +0.11 +/- 0.24 1.00 +/- 0.00      0.494      0.494             3/3
+  LAC       int8 0.895   +0.23 +/- 0.56 1.00 +/- 0.01      0.489      0.486             2/3
+  LAC       int4 0.754 -13.99 +/- 32.15 0.50 +/- 1.10      0.210      0.516             2/3
+  LAC    prune50 0.887   -0.48 +/- 4.92 0.99 +/- 0.12      0.504      0.497             2/3
+  LAC prune50+ft 0.904   +0.94 +/- 2.73 1.02 +/- 0.06      0.529      0.503             2/3
+  LAC    prune70 0.811  -7.89 +/- 16.37 0.81 +/- 0.37      0.487      0.601             3/3
+  LAC prune70+ft 0.902   +0.76 +/- 2.11 1.02 +/- 0.05      0.523      0.499             3/3
+100%|██████████| 19.7M/19.7M [00:27<00:00, 723kB/s] 
+[dermamnist] train 7007 | calib+eval pool 3008 | classes 7 | class counts (pool) [99, 155, 330, 35, 334, 2012, 43]
+  seed 0 (112s) acc: fp32=0.740 int8=0.741 int4=0.735 prune50=0.736 prune70=0.513 prune50+ft=0.729 prune70+ft=0.729
+  seed 1 (116s) acc: fp32=0.748 int8=0.746 int4=0.746 prune50=0.741 prune70=0.594 prune50+ft=0.735 prune70+ft=0.725
+  seed 2 (118s) acc: fp32=0.739 int8=0.739 int4=0.738 prune50=0.738 prune70=0.528 prune50+ft=0.735 prune70+ft=0.737
+
+===== dermamnist (reuse vs recal; +/- = 95% t-interval across 3 seeds) =====
+score       comp   acc          gap_pts    size_ratio  wcc_reuse  wcc_recal seeds_same_sign
+  APS       fp32 0.742   -0.01 +/- 0.89 1.00 +/- 0.00      0.794      0.794             1/3
+  APS       int8 0.742   +0.08 +/- 1.22 1.00 +/- 0.01      0.795      0.795             2/3
+  APS       int4 0.740   -0.70 +/- 9.37 0.99 +/- 0.22      0.783      0.767             1/3
+  APS    prune50 0.738   +6.81 +/- 1.82 1.28 +/- 0.10      0.881      0.811             3/3
+  APS prune50+ft 0.733 -14.71 +/- 11.02 0.72 +/- 0.20      0.691      0.824             3/3
+  APS    prune70 0.545   +6.86 +/- 2.26 1.35 +/- 0.13      0.764      0.572             3/3
+  APS prune70+ft 0.731  -13.75 +/- 8.62 0.73 +/- 0.13      0.679      0.813             3/3
+  LAC       fp32 0.742   -0.03 +/- 0.50 1.00 +/- 0.00      0.684      0.684             2/3
+  LAC       int8 0.742   -0.00 +/- 0.40 1.00 +/- 0.01      0.686      0.686             2/3
+  LAC       int4 0.740   -0.17 +/- 0.98 1.00 +/- 0.04      0.654      0.657             2/3
+  LAC    prune50 0.738   +1.36 +/- 0.20 1.07 +/- 0.06      0.699      0.659             3/3
+  LAC prune50+ft 0.733   -2.05 +/- 0.68 0.91 +/- 0.02      0.587      0.652             3/3
+  LAC    prune70 0.545   -0.54 +/- 4.28 0.99 +/- 0.18      0.481      0.497             2/3
+  LAC prune70+ft 0.731   -2.39 +/- 1.73 0.90 +/- 0.05      0.608      0.671             3/3
+100%|██████████| 35.5M/35.5M [00:08<00:00, 3.97MB/s]
+[bloodmnist] train 11959 | calib+eval pool 5133 | classes 8 | class counts (pool) [366, 936, 466, 869, 365, 427, 999, 705]
+  seed 0 (169s) acc: fp32=0.961 int8=0.962 int4=0.959 prune50=0.958 prune70=0.911 prune50+ft=0.956 prune70+ft=0.958
+  seed 1 (171s) acc: fp32=0.960 int8=0.961 int4=0.947 prune50=0.950 prune70=0.867 prune50+ft=0.954 prune70+ft=0.959
+  seed 2 (172s) acc: fp32=0.962 int8=0.963 int4=0.944 prune50=0.954 prune70=0.881 prune50+ft=0.959 prune70+ft=0.959
+
+===== bloodmnist (reuse vs recal; +/- = 95% t-interval across 3 seeds) =====
+score       comp   acc          gap_pts    size_ratio  wcc_reuse  wcc_recal seeds_same_sign
+  APS       fp32 0.961   +0.67 +/- 0.79 1.00 +/- 0.00      0.699      0.699             3/3
+  APS       int8 0.962   +0.74 +/- 0.61 1.00 +/- 0.01      0.700      0.700             3/3
+  APS       int4 0.950   +1.05 +/- 4.52 1.01 +/- 0.24      0.667      0.674             2/3
+  APS    prune50 0.954   +7.35 +/- 2.96 1.31 +/- 0.24      0.874      0.660             3/3
+  APS prune50+ft 0.956   -5.72 +/- 5.95 0.75 +/- 0.36      0.432      0.756             3/3
+  APS    prune70 0.886   +9.97 +/- 0.03 1.81 +/- 0.41      0.997      0.650             3/3
+  APS prune70+ft 0.959   -6.49 +/- 4.96 0.73 +/- 0.28      0.460      0.791             3/3
+  LAC       fp32 0.961   +0.22 +/- 0.44 1.00 +/- 0.00      0.768      0.768             3/3
+  LAC       int8 0.962   +0.23 +/- 0.49 1.00 +/- 0.00      0.768      0.768             3/3
+  LAC       int4 0.950   -1.34 +/- 2.49 0.98 +/- 0.04      0.681      0.720             3/3
+  LAC    prune50 0.954   -2.23 +/- 1.57 0.97 +/- 0.02      0.715      0.768             3/3
+  LAC prune50+ft 0.956   -0.75 +/- 1.28 0.99 +/- 0.02      0.742      0.764             3/3
+  LAC    prune70 0.886 -26.50 +/- 12.79 0.63 +/- 0.20      0.100      0.554             3/3
+  LAC prune70+ft 0.959   -0.17 +/- 0.79 0.99 +/- 0.01      0.748      0.756             2/3
+
+===== CROSS-DATASET SUMMARY: mean reuse gap in points (negative = undercoverage) =====
+dataset           bloodmnist  dermamnist  pathmnist
+score comp                                         
+LAC   fp32              0.22       -0.03       0.11
+      int8              0.23       -0.00       0.23
+      int4             -1.34       -0.17     -13.99
+      prune50          -2.23        1.36      -0.48
+      prune50+ft       -0.75       -2.05       0.94
+      prune70         -26.50       -0.54      -7.89
+      prune70+ft       -0.17       -2.39       0.76
+APS   fp32              0.67       -0.01       0.24
+      int8              0.74        0.08       0.15
+      int4              1.05       -0.70      -2.29
+      prune50           7.35        6.81       4.15
+      prune50+ft       -5.72      -14.71      -3.87
+      prune70           9.97        6.86       8.50
+      prune70+ft       -6.49      -13.75      -4.58
+
+Read it as: a compression is 'unsafe to reuse' if |gap| >= 2 points with the same sign on all datasets, and 'safe' if |gap| < 1 on all.

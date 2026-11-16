@@ -1,0 +1,188 @@
+100%|██████████| 19.7M/19.7M [00:26<00:00, 747kB/s]
+[dermamnist | resnet] train 7007 -> A 3503 / B 3504 | pool 3008 | classes 7
+  [dermamnist|resnet] seed 0 done in 44s | acc base=0.724 seen:adabn=0.725 fresh:adabn=0.721 seen:adabn_sorted=0.708
+  [dermamnist|resnet] seed 1 done in 46s | acc base=0.724 seen:adabn=0.724 fresh:adabn=0.718 seen:adabn_sorted=0.708
+  [dermamnist|resnet] seed 2 done in 49s | acc base=0.735 seen:adabn=0.732 fresh:adabn=0.728 seen:adabn_sorted=0.714
+  [dermamnist|resnet] seed 3 done in 47s | acc base=0.726 seen:adabn=0.727 fresh:adabn=0.722 seen:adabn_sorted=0.709
+  [dermamnist|resnet] seed 4 done in 47s | acc base=0.721 seen:adabn=0.718 fresh:adabn=0.710 seen:adabn_sorted=0.701
+  [dermamnist|resnet] seed 5 done in 48s | acc base=0.725 seen:adabn=0.726 fresh:adabn=0.720 seen:adabn_sorted=0.714
+  [dermamnist|resnet] seed 6 done in 47s | acc base=0.721 seen:adabn=0.722 fresh:adabn=0.715 seen:adabn_sorted=0.705
+  [dermamnist|resnet] seed 7 done in 48s | acc base=0.725 seen:adabn=0.723 fresh:adabn=0.716 seen:adabn_sorted=0.710
+  [dermamnist|resnet] seed 8 done in 47s | acc base=0.706 seen:adabn=0.707 fresh:adabn=0.702 seen:adabn_sorted=0.682
+  [dermamnist|resnet] seed 9 done in 47s | acc base=0.732 seen:adabn=0.731 fresh:adabn=0.726 seen:adabn_sorted=0.708
+
+################ dermamnist | resnet  (10 seeds) ################
+
+Top-1 accuracy on the pool (mean over seeds):
+arm
+base                 0.7239
+fresh:adabn          0.7180
+seen:adabn           0.7237
+seen:adabn_sorted    0.7059
+
+===== dermamnist | resnet | APS: coverage gap in points (negative = undercoverage), mean +/- 95% t over 10 seeds =====
+              arm          reuse      sizematch          recal
+      fresh:adabn -3.31 +/- 0.74 +0.10 +/- 0.24 -0.01 +/- 0.07
+       seen:adabn -0.68 +/- 0.38 +0.18 +/- 0.18 -0.01 +/- 0.07
+seen:adabn_sorted -8.21 +/- 0.83 -0.83 +/- 0.39 -0.05 +/- 0.06
+
+===== dermamnist | resnet | LAC: coverage gap in points (negative = undercoverage), mean +/- 95% t over 10 seeds =====
+              arm          reuse      sizematch          recal
+      fresh:adabn -0.97 +/- 0.16 -0.31 +/- 0.19 -0.02 +/- 0.11
+       seen:adabn -0.13 +/- 0.14 +0.03 +/- 0.17 -0.01 +/- 0.12
+seen:adabn_sorted -2.79 +/- 0.35 -1.31 +/- 0.30 +0.01 +/- 0.14
+
+===== dermamnist | resnet | RAPS: coverage gap in points (negative = undercoverage), mean +/- 95% t over 10 seeds =====
+              arm          reuse      sizematch          recal
+      fresh:adabn -0.57 +/- 0.15 -0.21 +/- 0.16 +0.01 +/- 0.12
+       seen:adabn -0.07 +/- 0.14 +0.03 +/- 0.13 -0.01 +/- 0.09
+seen:adabn_sorted -1.64 +/- 0.44 -0.97 +/- 0.38 +0.02 +/- 0.12
+
+===== dermamnist | resnet | SCORE-SHIFT DIAGNOSTICS (APS, mean over seeds) =====
+                    eps50   eps90   eps99      ks  mean_shift   d_acc  d_maxp   d_ent  d_size  frac_top1_changed
+arm                                                                                                             
+fresh:adabn        0.0011  0.0567  0.3999  0.0449      0.0038 -0.0059  0.0050 -0.0165 -0.2778             0.0283
+seen:adabn         0.0005  0.0147  0.0829  0.0154      0.0010 -0.0002  0.0013 -0.0045 -0.0762             0.0090
+seen:adabn_sorted  0.0018  0.1709  0.4405  0.0969      0.0088 -0.0180  0.0108 -0.0353 -0.5518             0.0750
+100%|██████████| 35.5M/35.5M [00:53<00:00, 664kB/s]
+[bloodmnist | resnet] train 11959 -> A 5979 / B 5980 | pool 5133 | classes 8
+  [bloodmnist|resnet] seed 0 done in 69s | acc base=0.946 seen:adabn=0.947 fresh:adabn=0.946 seen:adabn_sorted=0.899
+  [bloodmnist|resnet] seed 1 done in 66s | acc base=0.946 seen:adabn=0.946 fresh:adabn=0.947 seen:adabn_sorted=0.887
+  [bloodmnist|resnet] seed 2 done in 66s | acc base=0.945 seen:adabn=0.945 fresh:adabn=0.945 seen:adabn_sorted=0.868
+  [bloodmnist|resnet] seed 3 done in 66s | acc base=0.945 seen:adabn=0.944 fresh:adabn=0.944 seen:adabn_sorted=0.845
+  [bloodmnist|resnet] seed 4 done in 67s | acc base=0.950 seen:adabn=0.949 fresh:adabn=0.950 seen:adabn_sorted=0.886
+  [bloodmnist|resnet] seed 5 done in 67s | acc base=0.946 seen:adabn=0.947 fresh:adabn=0.947 seen:adabn_sorted=0.884
+  [bloodmnist|resnet] seed 6 done in 66s | acc base=0.945 seen:adabn=0.946 fresh:adabn=0.945 seen:adabn_sorted=0.880
+  [bloodmnist|resnet] seed 7 done in 66s | acc base=0.947 seen:adabn=0.947 fresh:adabn=0.947 seen:adabn_sorted=0.892
+  [bloodmnist|resnet] seed 8 done in 66s | acc base=0.942 seen:adabn=0.944 fresh:adabn=0.943 seen:adabn_sorted=0.864
+  [bloodmnist|resnet] seed 9 done in 67s | acc base=0.946 seen:adabn=0.947 fresh:adabn=0.947 seen:adabn_sorted=0.893
+
+################ bloodmnist | resnet  (10 seeds) ################
+
+Top-1 accuracy on the pool (mean over seeds):
+arm
+base                 0.9457
+fresh:adabn          0.9462
+seen:adabn           0.9461
+seen:adabn_sorted    0.8800
+
+===== bloodmnist | resnet | APS: coverage gap in points (negative = undercoverage), mean +/- 95% t over 10 seeds =====
+              arm           reuse      sizematch          recal
+      fresh:adabn  -0.59 +/- 0.34 -0.08 +/- 0.24 +0.11 +/- 0.05
+       seen:adabn  -0.14 +/- 0.27 -0.02 +/- 0.22 +0.10 +/- 0.06
+seen:adabn_sorted -39.38 +/- 2.57 -8.37 +/- 6.84 +9.50 +/- 0.59
+
+===== bloodmnist | resnet | LAC: coverage gap in points (negative = undercoverage), mean +/- 95% t over 10 seeds =====
+              arm          reuse      sizematch          recal
+      fresh:adabn +0.16 +/- 0.09 +0.11 +/- 0.11 +0.08 +/- 0.11
+       seen:adabn +0.13 +/- 0.09 +0.12 +/- 0.11 +0.09 +/- 0.10
+seen:adabn_sorted -5.77 +/- 1.29 -5.26 +/- 0.93 +0.04 +/- 0.08
+
+===== bloodmnist | resnet | RAPS: coverage gap in points (negative = undercoverage), mean +/- 95% t over 10 seeds =====
+              arm           reuse      sizematch          recal
+      fresh:adabn  -0.55 +/- 0.34 +0.04 +/- 0.05 +0.13 +/- 0.05
+       seen:adabn  -0.09 +/- 0.27 +0.07 +/- 0.06 +0.13 +/- 0.06
+seen:adabn_sorted -41.89 +/- 2.88 +4.07 +/- 2.87 +5.02 +/- 0.85
+
+===== bloodmnist | resnet | SCORE-SHIFT DIAGNOSTICS (APS, mean over seeds) =====
+                    eps50   eps90   eps99      ks  mean_shift   d_acc  d_maxp   d_ent  d_size  frac_top1_changed
+arm                                                                                                             
+fresh:adabn        0.0000  0.0069  0.0608  0.0150      0.0002  0.0004  0.0004 -0.0012 -0.0658             0.0041
+seen:adabn         0.0000  0.0065  0.0551  0.0092     -0.0000  0.0004  0.0001 -0.0002 -0.0200             0.0041
+seen:adabn_sorted  0.0006  0.1221  0.4554  0.4021      0.0045 -0.0657 -0.0034  0.0011 -2.4516             0.1071
+[dermamnist | plain] train 7007 -> A 3503 / B 3504 | pool 3008 | classes 7
+  [dermamnist|plain] seed 0 done in 14s | acc base=0.760 seen:adabn=0.762 fresh:adabn=0.761 seen:adabn_sorted=0.756
+  [dermamnist|plain] seed 1 done in 14s | acc base=0.754 seen:adabn=0.754 fresh:adabn=0.753 seen:adabn_sorted=0.748
+  [dermamnist|plain] seed 2 done in 14s | acc base=0.765 seen:adabn=0.766 fresh:adabn=0.765 seen:adabn_sorted=0.759
+  [dermamnist|plain] seed 3 done in 14s | acc base=0.758 seen:adabn=0.758 fresh:adabn=0.760 seen:adabn_sorted=0.751
+  [dermamnist|plain] seed 4 done in 13s | acc base=0.764 seen:adabn=0.761 fresh:adabn=0.760 seen:adabn_sorted=0.754
+  [dermamnist|plain] seed 5 done in 13s | acc base=0.774 seen:adabn=0.771 fresh:adabn=0.770 seen:adabn_sorted=0.768
+  [dermamnist|plain] seed 6 done in 13s | acc base=0.764 seen:adabn=0.767 fresh:adabn=0.765 seen:adabn_sorted=0.762
+  [dermamnist|plain] seed 7 done in 13s | acc base=0.756 seen:adabn=0.757 fresh:adabn=0.756 seen:adabn_sorted=0.751
+  [dermamnist|plain] seed 8 done in 13s | acc base=0.759 seen:adabn=0.760 fresh:adabn=0.757 seen:adabn_sorted=0.755
+  [dermamnist|plain] seed 9 done in 13s | acc base=0.765 seen:adabn=0.762 fresh:adabn=0.764 seen:adabn_sorted=0.761
+
+################ dermamnist | plain  (10 seeds) ################
+
+Top-1 accuracy on the pool (mean over seeds):
+arm
+base                 0.7618
+fresh:adabn          0.7612
+seen:adabn           0.7619
+seen:adabn_sorted    0.7563
+
+===== dermamnist | plain | APS: coverage gap in points (negative = undercoverage), mean +/- 95% t over 10 seeds =====
+              arm          reuse      sizematch          recal
+      fresh:adabn -0.72 +/- 0.88 -0.05 +/- 0.53 -0.03 +/- 0.15
+       seen:adabn -0.68 +/- 0.35 -0.14 +/- 0.22 -0.04 +/- 0.16
+seen:adabn_sorted -9.45 +/- 0.90 -3.86 +/- 0.79 -0.05 +/- 0.15
+
+===== dermamnist | plain | LAC: coverage gap in points (negative = undercoverage), mean +/- 95% t over 10 seeds =====
+              arm          reuse      sizematch          recal
+      fresh:adabn +0.02 +/- 0.07 +0.05 +/- 0.11 +0.02 +/- 0.10
+       seen:adabn +0.00 +/- 0.06 +0.04 +/- 0.10 +0.02 +/- 0.09
+seen:adabn_sorted -0.61 +/- 0.16 -0.22 +/- 0.15 +0.03 +/- 0.09
+
+===== dermamnist | plain | RAPS: coverage gap in points (negative = undercoverage), mean +/- 95% t over 10 seeds =====
+              arm          reuse      sizematch          recal
+      fresh:adabn -0.55 +/- 0.49 +0.21 +/- 0.30 +0.01 +/- 0.14
+       seen:adabn -0.46 +/- 0.25 +0.08 +/- 0.23 +0.02 +/- 0.16
+seen:adabn_sorted -9.21 +/- 1.07 +0.60 +/- 0.39 +0.02 +/- 0.15
+
+===== dermamnist | plain | SCORE-SHIFT DIAGNOSTICS (APS, mean over seeds) =====
+                    eps50   eps90   eps99      ks  mean_shift   d_acc  d_maxp   d_ent  d_size  frac_top1_changed
+arm                                                                                                             
+fresh:adabn        0.0032  0.0232  0.2669  0.0170      0.0017 -0.0006  0.0014 -0.0051 -0.0484             0.0150
+seen:adabn         0.0020  0.0126  0.1514  0.0112      0.0014  0.0001  0.0015 -0.0047 -0.0376             0.0087
+seen:adabn_sorted  0.0088  0.0756  0.4107  0.0988      0.0120 -0.0055  0.0115 -0.0376 -0.3748             0.0378
+[bloodmnist | plain] train 11959 -> A 5979 / B 5980 | pool 5133 | classes 8
+  [bloodmnist|plain] seed 0 done in 19s | acc base=0.950 seen:adabn=0.951 fresh:adabn=0.952 seen:adabn_sorted=0.924
+  [bloodmnist|plain] seed 1 done in 19s | acc base=0.953 seen:adabn=0.954 fresh:adabn=0.954 seen:adabn_sorted=0.921
+  [bloodmnist|plain] seed 2 done in 18s | acc base=0.950 seen:adabn=0.950 fresh:adabn=0.949 seen:adabn_sorted=0.922
+  [bloodmnist|plain] seed 3 done in 19s | acc base=0.951 seen:adabn=0.951 fresh:adabn=0.951 seen:adabn_sorted=0.931
+  [bloodmnist|plain] seed 4 done in 19s | acc base=0.953 seen:adabn=0.955 fresh:adabn=0.955 seen:adabn_sorted=0.930
+  [bloodmnist|plain] seed 5 done in 19s | acc base=0.949 seen:adabn=0.951 fresh:adabn=0.950 seen:adabn_sorted=0.920
+  [bloodmnist|plain] seed 6 done in 19s | acc base=0.957 seen:adabn=0.958 fresh:adabn=0.958 seen:adabn_sorted=0.930
+  [bloodmnist|plain] seed 7 done in 19s | acc base=0.959 seen:adabn=0.960 fresh:adabn=0.959 seen:adabn_sorted=0.934
+  [bloodmnist|plain] seed 8 done in 18s | acc base=0.954 seen:adabn=0.954 fresh:adabn=0.955 seen:adabn_sorted=0.935
+  [bloodmnist|plain] seed 9 done in 19s | acc base=0.954 seen:adabn=0.954 fresh:adabn=0.953 seen:adabn_sorted=0.938
+
+################ bloodmnist | plain  (10 seeds) ################
+
+Top-1 accuracy on the pool (mean over seeds):
+arm
+base                 0.9530
+fresh:adabn          0.9535
+seen:adabn           0.9537
+seen:adabn_sorted    0.9285
+
+===== bloodmnist | plain | APS: coverage gap in points (negative = undercoverage), mean +/- 95% t over 10 seeds =====
+              arm           reuse      sizematch          recal
+      fresh:adabn  -0.49 +/- 0.40 -0.12 +/- 0.24 +0.09 +/- 0.11
+       seen:adabn  -0.26 +/- 0.25 -0.06 +/- 0.22 +0.11 +/- 0.10
+seen:adabn_sorted -31.04 +/- 2.97 +0.02 +/- 2.35 +0.12 +/- 0.10
+
+===== bloodmnist | plain | LAC: coverage gap in points (negative = undercoverage), mean +/- 95% t over 10 seeds =====
+              arm          reuse      sizematch          recal
+      fresh:adabn +0.13 +/- 0.13 +0.09 +/- 0.11 +0.07 +/- 0.10
+       seen:adabn +0.13 +/- 0.11 +0.10 +/- 0.11 +0.07 +/- 0.10
+seen:adabn_sorted -1.58 +/- 0.53 -1.76 +/- 0.31 +0.03 +/- 0.12
+
+===== bloodmnist | plain | RAPS: coverage gap in points (negative = undercoverage), mean +/- 95% t over 10 seeds =====
+              arm           reuse      sizematch          recal
+      fresh:adabn  -0.48 +/- 0.36 +0.03 +/- 0.11 +0.12 +/- 0.10
+       seen:adabn  -0.23 +/- 0.22 +0.02 +/- 0.12 +0.12 +/- 0.10
+seen:adabn_sorted -31.71 +/- 2.93 +1.59 +/- 0.94 +0.17 +/- 0.10
+
+===== bloodmnist | plain | SCORE-SHIFT DIAGNOSTICS (APS, mean over seeds) =====
+                    eps50   eps90   eps99      ks  mean_shift   d_acc  d_maxp   d_ent  d_size  frac_top1_changed
+arm                                                                                                             
+fresh:adabn        0.0002  0.0090  0.0510  0.0134      0.0002  0.0005  0.0004 -0.0013 -0.0511             0.0039
+seen:adabn         0.0002  0.0087  0.0462  0.0094     -0.0000  0.0007  0.0002 -0.0006 -0.0266             0.0035
+seen:adabn_sorted  0.0025  0.1145  0.4270  0.3164      0.0072 -0.0245  0.0037 -0.0250 -2.1004             0.0508
+  [dermamnist|resnet] no saved Step 7 files in /content/drive/MyDrive/step7_out; skipping merge for this cell
+  [bloodmnist|resnet] no saved Step 7 files in /content/drive/MyDrive/step7_out; skipping merge for this cell
+  [dermamnist|plain] no saved Step 7 files in /content/drive/MyDrive/step7_out; skipping merge for this cell
+  [bloodmnist|plain] no saved Step 7 files in /content/drive/MyDrive/step7_out; skipping merge for this cell
+
+Read: (1) does adabn_sorted reproduce the Step 7 gaps and accuracy loss while shuffled adabn does not (confirms the bug)? (2) what does correct AdaBN do to the gap and to accuracy? (3) how do the correlations change without the contaminated rows?

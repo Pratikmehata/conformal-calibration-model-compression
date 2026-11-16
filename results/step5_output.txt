@@ -1,0 +1,483 @@
+100%|██████████| 19.7M/19.7M [00:17<00:00, 1.11MB/s]
+[dermamnist] train 7007 | calib+eval pool 3008 | classes 7 | class counts (pool) [99, 155, 330, 35, 334, 2012, 43]
+/tmp/ipykernel_422/1406620083.py:96: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  p = prepare_fx(m, get_default_qconfig_mapping(_ENG), (torch.as_tensor(Xtr[:2]),))
+/usr/local/lib/python3.13/dist-packages/torch/ao/quantization/observer.py:1039: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  super().__init__(
+/tmp/ipykernel_422/1406620083.py:100: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  q = convert_fx(p); q._is_quant = True
+/usr/local/lib/python3.13/dist-packages/torch/ao/nn/quantized/modules/conv.py:101: UserWarning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/quantized/Quantizer.cpp:111.)
+  qweight = torch._empty_affine_quantized(
+/tmp/ipykernel_422/1406620083.py:96: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  p = prepare_fx(m, get_default_qconfig_mapping(_ENG), (torch.as_tensor(Xtr[:2]),))
+/usr/local/lib/python3.13/dist-packages/torch/ao/quantization/observer.py:1039: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  super().__init__(
+/tmp/ipykernel_422/1406620083.py:100: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  q = convert_fx(p); q._is_quant = True
+  seed 0 (153s) acc: fp32=0.740 int8_sim=0.739 int8_real=0.736 prune50=0.729 prune50+int8_real=0.727
+/tmp/ipykernel_422/1406620083.py:96: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  p = prepare_fx(m, get_default_qconfig_mapping(_ENG), (torch.as_tensor(Xtr[:2]),))
+/usr/local/lib/python3.13/dist-packages/torch/ao/quantization/observer.py:1039: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  super().__init__(
+/tmp/ipykernel_422/1406620083.py:100: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  q = convert_fx(p); q._is_quant = True
+/tmp/ipykernel_422/1406620083.py:96: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  p = prepare_fx(m, get_default_qconfig_mapping(_ENG), (torch.as_tensor(Xtr[:2]),))
+/usr/local/lib/python3.13/dist-packages/torch/ao/quantization/observer.py:1039: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  super().__init__(
+/tmp/ipykernel_422/1406620083.py:100: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  q = convert_fx(p); q._is_quant = True
+  seed 1 (153s) acc: fp32=0.746 int8_sim=0.745 int8_real=0.746 prune50=0.745 prune50+int8_real=0.743
+/tmp/ipykernel_422/1406620083.py:96: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  p = prepare_fx(m, get_default_qconfig_mapping(_ENG), (torch.as_tensor(Xtr[:2]),))
+/usr/local/lib/python3.13/dist-packages/torch/ao/quantization/observer.py:1039: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  super().__init__(
+/tmp/ipykernel_422/1406620083.py:100: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  q = convert_fx(p); q._is_quant = True
+/tmp/ipykernel_422/1406620083.py:96: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  p = prepare_fx(m, get_default_qconfig_mapping(_ENG), (torch.as_tensor(Xtr[:2]),))
+/usr/local/lib/python3.13/dist-packages/torch/ao/quantization/observer.py:1039: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  super().__init__(
+/tmp/ipykernel_422/1406620083.py:100: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  q = convert_fx(p); q._is_quant = True
+  seed 2 (154s) acc: fp32=0.743 int8_sim=0.744 int8_real=0.740 prune50=0.726 prune50+int8_real=0.724
+/tmp/ipykernel_422/1406620083.py:96: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  p = prepare_fx(m, get_default_qconfig_mapping(_ENG), (torch.as_tensor(Xtr[:2]),))
+/usr/local/lib/python3.13/dist-packages/torch/ao/quantization/observer.py:1039: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  super().__init__(
+/tmp/ipykernel_422/1406620083.py:100: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  q = convert_fx(p); q._is_quant = True
+/tmp/ipykernel_422/1406620083.py:96: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  p = prepare_fx(m, get_default_qconfig_mapping(_ENG), (torch.as_tensor(Xtr[:2]),))
+/usr/local/lib/python3.13/dist-packages/torch/ao/quantization/observer.py:1039: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  super().__init__(
+/tmp/ipykernel_422/1406620083.py:100: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  q = convert_fx(p); q._is_quant = True
+  seed 3 (154s) acc: fp32=0.749 int8_sim=0.748 int8_real=0.747 prune50=0.743 prune50+int8_real=0.743
+/tmp/ipykernel_422/1406620083.py:96: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  p = prepare_fx(m, get_default_qconfig_mapping(_ENG), (torch.as_tensor(Xtr[:2]),))
+/usr/local/lib/python3.13/dist-packages/torch/ao/quantization/observer.py:1039: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  super().__init__(
+/tmp/ipykernel_422/1406620083.py:100: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  q = convert_fx(p); q._is_quant = True
+/tmp/ipykernel_422/1406620083.py:96: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  p = prepare_fx(m, get_default_qconfig_mapping(_ENG), (torch.as_tensor(Xtr[:2]),))
+/usr/local/lib/python3.13/dist-packages/torch/ao/quantization/observer.py:1039: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  super().__init__(
+/tmp/ipykernel_422/1406620083.py:100: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  q = convert_fx(p); q._is_quant = True
+  seed 4 (155s) acc: fp32=0.738 int8_sim=0.738 int8_real=0.736 prune50=0.724 prune50+int8_real=0.725
+
+===== dermamnist: top-1 accuracy by compression (mean, std over seeds) =====
+                     mean     std
+comp                             
+fp32               0.7431  0.0046
+int8_sim           0.7428  0.0042
+int8_real          0.7412  0.0053
+prune50            0.7332  0.0098
+prune50+int8_real  0.7323  0.0098
+
+===== dermamnist: coverage gap (points vs 90), mean +/- 95% t-interval over 5 seeds =====
+score              comp          reuse      sizematch            qtc     qtc_noclip     recal_n100          recal
+  APS              fp32 -0.09 +/- 0.11 -0.09 +/- 0.11 -0.16 +/- 0.11 -0.16 +/- 0.11 +0.38 +/- 0.51 -0.09 +/- 0.11
+  APS          int8_sim -0.02 +/- 0.22 -0.06 +/- 0.13 +0.06 +/- 0.35 +0.06 +/- 0.35 +0.35 +/- 0.53 -0.09 +/- 0.10
+  APS         int8_real -0.19 +/- 0.23 -0.27 +/- 0.28 -0.17 +/- 0.42 -0.17 +/- 0.42 +0.44 +/- 0.49 -0.05 +/- 0.12
+  APS           prune50 +6.82 +/- 0.37 -0.14 +/- 1.17 +9.12 +/- 0.17 +9.12 +/- 0.17 +0.15 +/- 0.68 -0.08 +/- 0.17
+  APS prune50+int8_real +6.82 +/- 0.41 -0.39 +/- 0.90 +9.09 +/- 0.17 +9.09 +/- 0.17 +0.06 +/- 0.58 -0.13 +/- 0.16
+  LAC              fp32 -0.01 +/- 0.19 -0.01 +/- 0.19 -0.09 +/- 0.19 -0.09 +/- 0.19 +0.32 +/- 0.62 -0.01 +/- 0.19
+  LAC          int8_sim -0.01 +/- 0.22 -0.00 +/- 0.20 +0.08 +/- 0.34 +0.08 +/- 0.34 +0.33 +/- 0.62 -0.01 +/- 0.21
+  LAC         int8_real -0.03 +/- 0.27 -0.01 +/- 0.28 +0.00 +/- 0.29 +0.00 +/- 0.29 +0.28 +/- 0.54 +0.00 +/- 0.20
+  LAC           prune50 +1.23 +/- 0.66 -1.16 +/- 0.38 +8.42 +/- 0.24 +8.42 +/- 0.24 +0.22 +/- 0.40 -0.00 +/- 0.29
+  LAC prune50+int8_real +1.26 +/- 0.61 -1.13 +/- 0.41 +8.41 +/- 0.18 +8.41 +/- 0.18 +0.20 +/- 0.39 -0.04 +/- 0.25
+ RAPS              fp32 -0.01 +/- 0.13 -0.01 +/- 0.13 -0.07 +/- 0.13 -0.07 +/- 0.13 +0.17 +/- 0.41 -0.01 +/- 0.13
+ RAPS          int8_sim -0.02 +/- 0.16 -0.03 +/- 0.16 +0.05 +/- 0.27 +0.05 +/- 0.27 +0.19 +/- 0.39 -0.01 +/- 0.14
+ RAPS         int8_real -0.09 +/- 0.20 -0.09 +/- 0.20 -0.10 +/- 0.33 -0.10 +/- 0.33 +0.30 +/- 0.57 -0.01 +/- 0.10
+ RAPS           prune50 -0.59 +/- 0.66 -1.40 +/- 0.48 +7.07 +/- 0.50 +7.07 +/- 0.50 +0.15 +/- 0.46 -0.04 +/- 0.25
+ RAPS prune50+int8_real -0.72 +/- 0.74 -1.56 +/- 0.70 +6.99 +/- 0.50 +6.99 +/- 0.50 +0.13 +/- 0.40 +0.02 +/- 0.18
+
+----- dermamnist: WORST-CLASS coverage -----
+score              comp  reuse  sizematch  recal
+  APS              fp32  0.827      0.827  0.827
+  APS          int8_sim  0.829      0.828  0.828
+  APS         int8_real  0.827      0.826  0.829
+  APS           prune50  0.894      0.835  0.835
+  APS prune50+int8_real  0.899      0.835  0.838
+  LAC              fp32  0.668      0.668  0.668
+  LAC          int8_sim  0.666      0.667  0.667
+  LAC         int8_real  0.665      0.664  0.664
+  LAC           prune50  0.699      0.627  0.658
+  LAC prune50+int8_real  0.701      0.629  0.657
+ RAPS              fp32  0.617      0.617  0.617
+ RAPS          int8_sim  0.618      0.618  0.619
+ RAPS         int8_real  0.625      0.625  0.631
+ RAPS           prune50  0.636      0.611  0.651
+ RAPS prune50+int8_real  0.633      0.602  0.654
+
+----- dermamnist: mean set size / full-recalibration set size -----
+score              comp  reuse  sizematch  qtc  qtc_noclip
+  APS              fp32   1.00       1.00 1.00        1.00
+  APS          int8_sim   1.00       1.00 1.00        1.00
+  APS         int8_real   1.00       0.99 1.00        1.00
+  APS           prune50   1.28       1.00 1.55        1.55
+  APS prune50+int8_real   1.28       0.99 1.54        1.54
+  LAC              fp32   1.00       1.00 1.00        1.00
+  LAC          int8_sim   1.00       1.00 1.00        1.00
+  LAC         int8_real   1.00       1.00 1.00        1.00
+  LAC           prune50   1.07       0.94 2.02        2.02
+  LAC prune50+int8_real   1.07       0.95 2.02        2.02
+ RAPS              fp32   1.00       1.00 1.00        1.00
+ RAPS          int8_sim   1.00       1.00 1.00        1.00
+ RAPS         int8_real   1.00       1.00 1.00        1.00
+ RAPS           prune50   0.98       0.95 1.80        1.80
+ RAPS prune50+int8_real   0.97       0.94 1.78        1.78
+100%|██████████| 35.5M/35.5M [00:22<00:00, 1.57MB/s]
+[bloodmnist] train 11959 | calib+eval pool 5133 | classes 8 | class counts (pool) [366, 936, 466, 869, 365, 427, 999, 705]
+/tmp/ipykernel_422/1406620083.py:96: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  p = prepare_fx(m, get_default_qconfig_mapping(_ENG), (torch.as_tensor(Xtr[:2]),))
+/usr/local/lib/python3.13/dist-packages/torch/ao/quantization/observer.py:1039: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  super().__init__(
+/tmp/ipykernel_422/1406620083.py:100: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  q = convert_fx(p); q._is_quant = True
+/tmp/ipykernel_422/1406620083.py:96: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  p = prepare_fx(m, get_default_qconfig_mapping(_ENG), (torch.as_tensor(Xtr[:2]),))
+/usr/local/lib/python3.13/dist-packages/torch/ao/quantization/observer.py:1039: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  super().__init__(
+/tmp/ipykernel_422/1406620083.py:100: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  q = convert_fx(p); q._is_quant = True
+  seed 0 (214s) acc: fp32=0.962 int8_sim=0.963 int8_real=0.963 prune50=0.956 prune50+int8_real=0.957
+/tmp/ipykernel_422/1406620083.py:96: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  p = prepare_fx(m, get_default_qconfig_mapping(_ENG), (torch.as_tensor(Xtr[:2]),))
+/usr/local/lib/python3.13/dist-packages/torch/ao/quantization/observer.py:1039: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  super().__init__(
+/tmp/ipykernel_422/1406620083.py:100: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  q = convert_fx(p); q._is_quant = True
+/tmp/ipykernel_422/1406620083.py:96: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  p = prepare_fx(m, get_default_qconfig_mapping(_ENG), (torch.as_tensor(Xtr[:2]),))
+/usr/local/lib/python3.13/dist-packages/torch/ao/quantization/observer.py:1039: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  super().__init__(
+/tmp/ipykernel_422/1406620083.py:100: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  q = convert_fx(p); q._is_quant = True
+  seed 1 (214s) acc: fp32=0.962 int8_sim=0.962 int8_real=0.962 prune50=0.952 prune50+int8_real=0.951
+/tmp/ipykernel_422/1406620083.py:96: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  p = prepare_fx(m, get_default_qconfig_mapping(_ENG), (torch.as_tensor(Xtr[:2]),))
+/usr/local/lib/python3.13/dist-packages/torch/ao/quantization/observer.py:1039: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  super().__init__(
+/tmp/ipykernel_422/1406620083.py:100: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  q = convert_fx(p); q._is_quant = True
+/tmp/ipykernel_422/1406620083.py:96: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  p = prepare_fx(m, get_default_qconfig_mapping(_ENG), (torch.as_tensor(Xtr[:2]),))
+/usr/local/lib/python3.13/dist-packages/torch/ao/quantization/observer.py:1039: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  super().__init__(
+/tmp/ipykernel_422/1406620083.py:100: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  q = convert_fx(p); q._is_quant = True
+  seed 2 (213s) acc: fp32=0.965 int8_sim=0.964 int8_real=0.964 prune50=0.954 prune50+int8_real=0.955
+/tmp/ipykernel_422/1406620083.py:96: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  p = prepare_fx(m, get_default_qconfig_mapping(_ENG), (torch.as_tensor(Xtr[:2]),))
+/usr/local/lib/python3.13/dist-packages/torch/ao/quantization/observer.py:1039: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  super().__init__(
+/tmp/ipykernel_422/1406620083.py:100: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  q = convert_fx(p); q._is_quant = True
+/tmp/ipykernel_422/1406620083.py:96: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  p = prepare_fx(m, get_default_qconfig_mapping(_ENG), (torch.as_tensor(Xtr[:2]),))
+/usr/local/lib/python3.13/dist-packages/torch/ao/quantization/observer.py:1039: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  super().__init__(
+/tmp/ipykernel_422/1406620083.py:100: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  q = convert_fx(p); q._is_quant = True
+  seed 3 (215s) acc: fp32=0.959 int8_sim=0.959 int8_real=0.959 prune50=0.952 prune50+int8_real=0.953
+/tmp/ipykernel_422/1406620083.py:96: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  p = prepare_fx(m, get_default_qconfig_mapping(_ENG), (torch.as_tensor(Xtr[:2]),))
+/usr/local/lib/python3.13/dist-packages/torch/ao/quantization/observer.py:1039: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  super().__init__(
+/tmp/ipykernel_422/1406620083.py:100: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  q = convert_fx(p); q._is_quant = True
+/tmp/ipykernel_422/1406620083.py:96: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  p = prepare_fx(m, get_default_qconfig_mapping(_ENG), (torch.as_tensor(Xtr[:2]),))
+/usr/local/lib/python3.13/dist-packages/torch/ao/quantization/observer.py:1039: UserWarning: Please use quant_min and quant_max to specify the range for observers.                     reduce_range will be deprecated in a future release of PyTorch.
+  super().__init__(
+/tmp/ipykernel_422/1406620083.py:100: DeprecationWarning: torch.ao.quantization is deprecated and will be removed in 2.10. 
+For migrations of users: 
+1. Eager mode quantization (torch.ao.quantization.quantize, torch.ao.quantization.quantize_dynamic), please migrate to use torchao eager mode quantize_ API instead 
+2. FX graph mode quantization (torch.ao.quantization.quantize_fx.prepare_fx,torch.ao.quantization.quantize_fx.convert_fx, please migrate to use torchao pt2e quantization API instead (prepare_pt2e, convert_pt2e) 
+3. pt2e quantization has been migrated to torchao (https://github.com/pytorch/ao/tree/main/torchao/quantization/pt2e) 
+see https://github.com/pytorch/ao/issues/2259 for more details
+  q = convert_fx(p); q._is_quant = True
+  seed 4 (214s) acc: fp32=0.962 int8_sim=0.961 int8_real=0.962 prune50=0.958 prune50+int8_real=0.955
+
+===== bloodmnist: top-1 accuracy by compression (mean, std over seeds) =====
+                     mean     std
+comp                             
+fp32               0.9619  0.0021
+int8_sim           0.9616  0.0020
+int8_real          0.9621  0.0017
+prune50            0.9542  0.0025
+prune50+int8_real  0.9541  0.0024
+
+===== bloodmnist: coverage gap (points vs 90), mean +/- 95% t-interval over 5 seeds =====
+score              comp          reuse      sizematch            qtc     qtc_noclip     recal_n100          recal
+  APS              fp32 +0.54 +/- 0.23 +0.54 +/- 0.23 +0.48 +/- 0.19 +0.48 +/- 0.19 +0.84 +/- 1.02 +0.54 +/- 0.23
+  APS          int8_sim +0.48 +/- 0.34 +0.18 +/- 0.53 +0.44 +/- 0.29 +0.44 +/- 0.29 +0.81 +/- 1.00 +0.60 +/- 0.19
+  APS         int8_real +0.31 +/- 0.14 +0.00 +/- 0.43 +0.39 +/- 0.28 +0.39 +/- 0.28 +0.85 +/- 1.08 +0.69 +/- 0.48
+  APS           prune50 +6.49 +/- 1.48 -0.16 +/- 1.27 +9.15 +/- 1.17 +9.15 +/- 1.17 +0.25 +/- 0.70 +0.14 +/- 0.09
+  APS prune50+int8_real +6.33 +/- 1.44 -0.09 +/- 1.24 +8.84 +/- 1.60 +8.84 +/- 1.60 +0.22 +/- 0.60 +0.12 +/- 0.07
+  LAC              fp32 +0.11 +/- 0.17 +0.11 +/- 0.17 +0.08 +/- 0.17 +0.08 +/- 0.17 +0.12 +/- 0.69 +0.11 +/- 0.17
+  LAC          int8_sim +0.08 +/- 0.18 +0.12 +/- 0.18 +0.04 +/- 0.17 +0.04 +/- 0.17 +0.10 +/- 0.72 +0.11 +/- 0.19
+  LAC         int8_real +0.07 +/- 0.20 +0.12 +/- 0.15 +0.12 +/- 0.24 +0.12 +/- 0.24 +0.08 +/- 0.74 +0.13 +/- 0.16
+  LAC           prune50 -3.08 +/- 0.53 -0.35 +/- 0.35 +5.14 +/- 2.35 +5.14 +/- 2.35 +0.11 +/- 0.56 +0.14 +/- 0.22
+  LAC prune50+int8_real -3.16 +/- 0.60 -0.34 +/- 0.35 +5.02 +/- 2.31 +5.02 +/- 2.31 +0.08 +/- 0.71 +0.13 +/- 0.22
+ RAPS              fp32 +0.76 +/- 0.55 +0.76 +/- 0.55 +0.73 +/- 0.56 +0.73 +/- 0.56 +0.90 +/- 0.97 +0.76 +/- 0.55
+ RAPS          int8_sim +0.71 +/- 0.58 +0.71 +/- 0.58 +0.68 +/- 0.59 +0.68 +/- 0.59 +0.93 +/- 0.98 +0.79 +/- 0.53
+ RAPS         int8_real +0.45 +/- 0.34 +0.38 +/- 0.40 +0.48 +/- 0.40 +0.48 +/- 0.40 +1.03 +/- 1.11 +0.72 +/- 0.47
+ RAPS           prune50 +6.10 +/- 1.51 -0.05 +/- 0.58 +8.51 +/- 1.15 +8.51 +/- 1.15 +0.16 +/- 0.81 +0.21 +/- 0.12
+ RAPS prune50+int8_real +5.93 +/- 1.51 -0.04 +/- 0.61 +8.17 +/- 1.61 +8.17 +/- 1.61 +0.12 +/- 0.67 +0.17 +/- 0.09
+
+----- bloodmnist: WORST-CLASS coverage -----
+score              comp  reuse  sizematch  recal
+  APS              fp32  0.684      0.684  0.684
+  APS          int8_sim  0.681      0.674  0.684
+  APS         int8_real  0.672      0.664  0.680
+  APS           prune50  0.828      0.596  0.606
+  APS prune50+int8_real  0.820      0.599  0.607
+  LAC              fp32  0.766      0.766  0.766
+  LAC          int8_sim  0.763      0.764  0.764
+  LAC         int8_real  0.766      0.768  0.768
+  LAC           prune50  0.719      0.773  0.782
+  LAC prune50+int8_real  0.718      0.773  0.783
+ RAPS              fp32  0.703      0.703  0.703
+ RAPS          int8_sim  0.700      0.700  0.702
+ RAPS         int8_real  0.688      0.686  0.695
+ RAPS           prune50  0.842      0.619  0.630
+ RAPS prune50+int8_real  0.832      0.621  0.630
+
+----- bloodmnist: mean set size / full-recalibration set size -----
+score              comp  reuse  sizematch  qtc  qtc_noclip
+  APS              fp32   1.00       1.00 1.00        1.00
+  APS          int8_sim   1.00       1.00 1.00        1.00
+  APS         int8_real   0.99       0.99 0.99        0.99
+  APS           prune50   1.26       1.00 1.51        1.51
+  APS prune50+int8_real   1.27       1.00 1.51        1.51
+  LAC              fp32   1.00       1.00 1.00        1.00
+  LAC          int8_sim   1.00       1.00 1.00        1.00
+  LAC         int8_real   1.00       1.00 1.00        1.00
+  LAC           prune50   0.96       0.99 1.09        1.09
+  LAC prune50+int8_real   0.96       0.99 1.08        1.08
+ RAPS              fp32   1.00       1.00 1.00        1.00
+ RAPS          int8_sim   1.00       1.00 1.00        1.00
+ RAPS         int8_real   1.00       1.00 1.00        1.00
+ RAPS           prune50   1.09       1.00 1.12        1.12
+ RAPS prune50+int8_real   1.09       1.00 1.12        1.12
+
+===== SUMMARY: |mean coverage gap| in points, averaged over datasets =====
+mode                     reuse  sizematch   qtc  qtc_noclip  recal_n100  recal
+score comp                                                                    
+LAC   fp32                0.06       0.06  0.08        0.08        0.22   0.06
+      int8_sim            0.05       0.06  0.06        0.06        0.22   0.06
+      int8_real           0.05       0.07  0.06        0.06        0.18   0.06
+      prune50             2.16       0.76  6.78        6.78        0.17   0.07
+      prune50+int8_real   2.21       0.73  6.71        6.71        0.14   0.08
+APS   fp32                0.32       0.32  0.32        0.32        0.61   0.32
+      int8_sim            0.25       0.12  0.25        0.25        0.58   0.34
+      int8_real           0.25       0.13  0.28        0.28        0.64   0.37
+      prune50             6.66       0.15  9.13        9.13        0.20   0.11
+      prune50+int8_real   6.58       0.24  8.96        8.96        0.14   0.12
+RAPS  fp32                0.38       0.38  0.40        0.40        0.53   0.38
+      int8_sim            0.37       0.37  0.36        0.36        0.56   0.40
+      int8_real           0.27       0.24  0.29        0.29        0.66   0.37
+      prune50             3.34       0.73  7.79        7.79        0.16   0.12
+      prune50+int8_real   3.33       0.80  7.58        7.58        0.12   0.10
+
+Read: (1) is int8_real reuse gap under about 1 point like int8_sim? If not, state that simulated INT8 understated the effect. (2) does qtc_noclip change the Step 4 conclusion (qtc not better than reuse after fine-tuning/pruning)?
